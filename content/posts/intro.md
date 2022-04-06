@@ -1,7 +1,7 @@
 ---
 title: "Developers y la cultura del desarrollo Software"
 date: 2022-04-05
-description: 'Este es mi primer post de la travesía en la Misión de Backend con Node JS de Launch X.'
+description: 'La cultura del desarrollo software va más allá que unas simples líneas de código.'
 ---
 
 La cultura de una/un profesional de software toma parte de una cultura del trabajo, de la ideología y los principios que se toman tanto en equipo como individualmente.
