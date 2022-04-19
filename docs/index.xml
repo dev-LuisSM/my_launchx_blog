@@ -6,7 +6,17 @@
     <description>Recent content in Launch X Bitácora de viaje on Bitácora de Viaje</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dev-luissm.github.io/my_launchx_blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://dev-luissm.github.io/my_launchx_blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mi ruta de aprendizaje en Launch X</title>
+      <link>https://dev-luissm.github.io/my_launchx_blog/posts/post_2/</link>
+      <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dev-luissm.github.io/my_launchx_blog/posts/post_2/</guid>
+      <description>Llevo unos días sin escribir en el blog debido a que no se me ha hecho costumbre, pero nunca es tarde para volver a iniciar. :) La primera semana en la misión Backend fue una gran semana de inicio, para retomar un poco las clases y objetos que ví en la universidad así como un tema nuevo Exportación de módulos con CommonJS y ESM(EcmaScript Modules)
+Un vistazo rápido a los objetos Los objetos en Javascript como en otros lenguajes, se pueden comparar con objetos de la vida real.</description>
+    </item>
+    
     <item>
       <title>Developers y la cultura del desarrollo Software</title>
       <link>https://dev-luissm.github.io/my_launchx_blog/posts/intro/</link>

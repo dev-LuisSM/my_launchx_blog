@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Mi ruta de aprendizaje en Launch X - Bitácora de Viaje</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://dev-luissm.github.io/my_launchx_blog/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="../../css/style.min.4f4767d518839223786999cdb69fc7a63791220ecccd236bc732a5f998aaee2d.css">
+  
+
+  
+    <meta name="description" content="Primera semana en la misión Backend: Exportación de módulos"/>
+    <meta property="og:title" content="Mi ruta de aprendizaje en Launch X"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://dev-luissm.github.io/my_launchx_blog/posts/post_2/"/>
+    
+    <meta property="og:description" content="Primera semana en la misión Backend: Exportación de módulos"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@panditasdehtml"/>
+    <meta name="twitter:creator" content="@panditasdehtml"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="https://dev-luissm.github.io/my_launchx_blog/">Bitácora de Viaje</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-aboutme">
+                <a href="../../pages/about/">AboutMe</a>
+            </li>
+        
+            <li class="menu-item-posts">
+                <a href="../../posts/">Posts</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>Mi ruta de aprendizaje en Launch X<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <p>Llevo unos días sin escribir en el blog debido a que no se me ha hecho costumbre, pero nunca es tarde para volver a iniciar. :)
+La primera semana en la misión Backend fue una gran semana de inicio, para retomar un poco las clases y objetos que ví en la universidad así como un tema nuevo <strong>Exportación de módulos con CommonJS y ESM(EcmaScript Modules)</strong></p>
+<h2 id="un-vistazo-rápido-a-los-objetos">Un vistazo rápido a los objetos</h2>
+<p>Los objetos en Javascript como en otros lenguajes, se pueden comparar con objetos de la vida real.
+MDN nos <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Working_with_Objects">menciona</a> que &lsquo;En JavaScript, un objeto es un entidad independiente con propiedades y tipos&rsquo;.
+Los objetos son bastante útiles a la hora de programar y de obtener o crear información, hay diversas maneras de tratar con ellos y dependiendo de lo que se necesite hacer.</p>
+<h3 id="cómo-crear-un-objeto">¿Cómo crear un objeto?</h3>
+<p>Un objeto se conforma de dos partes, una <strong>llave</strong> y un <strong>valor</strong>. En nuestro ejemplo de abajo se puede visualizar de manera simple:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">const fruits = {
+  // &#34;key&#34;: &#34;value&#34; &lt;-- Sintaxis
+  
+  &#34;fruit&#34;: &#34;🍎&#34;,
+  &#34;fruit_bowl&#34;: [&#34;🍊&#34;, &#34;🍍&#34;, &#34;🍓&#34;],
+  &#34;favorite_fruits&#34;: {
+    &#34;me&#34;: &#34;🍑&#34;,
+    &#34;mySister&#34;: &#34;🍐&#34;,
+    &#34;myBrother&#34;: &#34;🥝&#34;
+  }
+}
+</code></pre></div><p>Las llaves son quienes contienen el valor, múltiples valores y objetos (con más llaves y valores).</p>
+<h3 id="qué-hay-sobre-las-clases">¿Qué hay sobre las clases?</h3>
+<p>Hablar de clases en algún lenguaje de programación es hablar de Programación Orientada a Objetos.</p>
+<p>Las clases fueron introducidas a Javascript con ECMAScript 2015, la sintaxis es muy similar a un objeto, además de ser una manera más fácil de lidiar con herencia.
+A la hora de hacer una clase, se necesita crear un constructor donde se recibirán ciertos parámetros.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">class car = {
+  constructor(make, model, year){
+    this.make = make
+    this.model = model
+    this.year = year
+  }
+}
+</code></pre></div><p>Para instanciarlo (o llamarlo), se realiza el siguiente código</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">const myCar = new car(&#39;Nissan&#39;, &#39;Versa&#39;, 2015)
+
+</code></pre></div><p>En el post de la semana 2 hablaré más sobre clases y objetos debido a que es un tema bastante grande.</p>
+<h2 id="exportación-de-módulos">Exportación de módulos</h2>
+<h3 id="commonjs-cjs">CommonJs (CJS)</h3>
+<p>CommonJs fue creado en el 2009 para poder trabajar Javascript con Node fuera del navegador (por lo cuál, no se puede soportar en estos mismos pero sí en aplicaciones de escritorio o servidores).</p>
+<p>Al utilizar CommonJs se deben de tomar en cuenta dos palabras reservadas <strong>exports</strong> y <strong>require</strong>.</p>
+<ul>
+<li>exports: Como lo sugiere su nombre, sirve para exportar cierto código que quieres reutilizar en algún otro archivo de Js.</li>
+<li>require: Es la forma de importar el código anteriormente exportado.</li>
+</ul>
+<p>Esto es muy utilizado para importar módulos exportados desde node_modules.</p>
+<p>Ejemplo de cómo utilizar CJS:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">// class.js
+
+class Pokemon { /* ... */ }
+module.exports = Pokemon
+
+
+// module.js
+
+method(){ /* ... */ }
+module.exports = method()
+
+
+// main.js
+
+const Pokemon = require(&#39;./class.js&#39;)   // Importando módulo clase
+const imported_module = require(&#39;./module.js&#39;)  // Importando otro módulo sin clase
+
+const pikachu = new Pokemon(&#39;&#39;) // &lt;-- Instanciando clase
+imported_module.method() // Llamando método del módulo
+
+</code></pre></div><h3 id="ecmascript-modules-esm">EcmaScript Modules (ESM)</h3>
+<p>ESM vino con la creación de EcmaScript 2015 (ES6) y junto con ello, una manera de traer módulos dentro de los navegadores más fácil.
+Esta manera de exportar módulos es utilizado por diversos frameworks.</p>
+<p>Al igual que CJS tiene dos palabras reservadas importantes <strong>export</strong> e <strong>import</strong>.</p>
+<ul>
+<li>export: De igual manera, exporta las clases, médotos o variables que se desean trabajar en otros archivos Js.</li>
+<li>import: Se encarga de importar las exportaciones.</li>
+<li>default: Esto se escribe después de export, su función es para exportar únicamente ese método, clase o variable de todo el archivo</li>
+</ul>
+<p>La manera de utilizarlos es la siguiente:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">// class.js
+export default class Pokemon { /* ... */ }
+dummyFunction() { /* ... */ }
+
+// module.js
+export const number = 384
+export const method = () =&gt; console.log(&#39;Hello&#39;)
+export const otherNumber = 40
+
+// index.js
+import MyPokemon from &#39;./pokemon.js&#39;
+
+import { number, method } from &#39;./module.js&#39; // Para exportar codigo en específico)
+// import * as utils from &#39;./module.js&#39; // Para exportar todo el código que tiene la palabra &#34;export&#34; en el módulo
+
+</code></pre></div><p>Para finalizar, he de decir que al inicio me revolví con el tema a la hora de trabajarlo ya que sin querer conocía la forma de exporat ESM y pensé que era la única manera, pero llegó CJS y tuve problemas con node.js, por lo cual, recomiendo bastante revisar este <a href="https://lenguajejs.com/automatizadores/introduccion/commonjs-vs-es-modules/">artículo</a>.</p>
+<p>La semana dos será más específica sobre los objetos, clases y algunos otros métodos para tratarlos, mientras tanto, buen día. :)</p>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/tamaldehtml" title="twitter" target="_blank" rel="noopener">
+          <img src="../../images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/dev-LuisSM" title="github" target="_blank" rel="noopener">
+          <img src="../../images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="../../js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>
