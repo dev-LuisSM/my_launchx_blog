@@ -49,7 +49,6 @@ Para instanciarlo (o llamarlo), se realiza el siguiente código
 
 ```
 const myCar = new car('Nissan', 'Versa', 2015)
-
 ```
 En el post de la semana 2 hablaré más sobre clases y objetos debido a que es un tema bastante grande.
 
@@ -86,7 +85,6 @@ const imported_module = require('./module.js')  // Importando otro módulo sin c
 
 const pikachu = new Pokemon('') // <-- Instanciando clase
 imported_module.method() // Llamando método del módulo
-
 ```
 
 ### EcmaScript Modules (ESM)
@@ -117,7 +115,6 @@ import MyPokemon from './pokemon.js'
 
 import { number, method } from './module.js' // Para exportar codigo en específico)
 // import * as utils from './module.js' // Para exportar todo el código que tiene la palabra "export" en el módulo
-
 ```
 
 Para finalizar, he de decir que al inicio me revolví con el tema a la hora de trabajarlo ya que sin querer conocía la forma de exporat ESM y pensé que era la única manera, pero llegó CJS y tuve problemas con node.js, por lo cual, recomiendo bastante revisar este [artículo](https://lenguajejs.com/automatizadores/introduccion/commonjs-vs-es-modules/).
