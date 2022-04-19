@@ -1,5 +1,5 @@
 ---
-title: "Mi ruta de aprendizaje en Launch X"
+title: "Backend: Semana 1 🚀"
 date: 2022-04-19
 description: 'Primera semana en la misión Backend: Exportación de módulos'
 ---
