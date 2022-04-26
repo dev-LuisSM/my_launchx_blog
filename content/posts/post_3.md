@@ -46,8 +46,8 @@ class PullRequest {
 ```
 Estos métodos al igual que en los objetos, se utilizan para tratar la información (en este caso) de la clase y la forma de mandar a llamar este método es la siguiente:
 ```
-const myFirstPR = new PullRequest("LaunchX", "Mi primer PR", 105) // <--- Instanciamos la clase
-console.log(myFirstPR.getInfo()) // <--- Una vez instanciado, se llama la función
+const myFirstPR = new PullRequest("LaunchX", "Mi primer PR", 105) // Instanciamos la clase
+console.log(myFirstPR.getInfo()) // Una vez instanciado, se llama la función
 ```
 
 ### Getters y Setters
@@ -141,7 +141,7 @@ class Explorer {
 
 class Viajero extends Explorer {
     constructor(name, user, mission, cycle) {
-        super(name, user, mission) // <--- SUPER ayudará a llamar el constructor padre (herencia)
+        super(name, user, mission) // SUPER ayudará a llamar el constructor padre (herencia)
         this.cycle = cycle
     }
 
@@ -167,7 +167,7 @@ Para realizar pruebas, necesitamos exportar los módulos que queremos probar.
 ```
 // Class - pokemon.js
 
-// Creamos nuestra clase como siempre
+// Creamos nuestra clase como siempre y la exportamos
 export default class Pokemon{
     constructor(name, type, age) {
         this.name = name
