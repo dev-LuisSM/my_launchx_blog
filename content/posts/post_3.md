@@ -24,7 +24,7 @@ persona.sayHello()
 ```
 Así es como un método es utilizado con objetos.
 
-### Métodos con clases, get y set, static, herencia y override 
+### Métodos en clases, get y set, static, herencia y override 
 Aun que comparten ciertas similitudes los objetos y clases, en este caso, los métodos son declarados como tal. Vimos en el post anterior que para crear una clase se necesita crear un constructor, bien, pues este constructor únicamente se encargará de establecer los datos o algunos datos.
 
 Los métodos son creados fuera de este constructor, la sintaxis es la siguiente:
