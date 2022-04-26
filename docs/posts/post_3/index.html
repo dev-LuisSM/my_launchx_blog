@@ -90,8 +90,8 @@ persona.sayHello()
     }
 }
 </code></pre></div><p>Estos métodos al igual que en los objetos, se utilizan para tratar la información (en este caso) de la clase y la forma de mandar a llamar este método es la siguiente:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">const myFirstPR = new PullRequest(&#34;LaunchX&#34;, &#34;Mi primer PR&#34;, 105) // &lt;--- Instanciamos la clase
-console.log(myFirstPR.getInfo()) // &lt;--- Una vez instanciado, se llama la función
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">const myFirstPR = new PullRequest(&#34;LaunchX&#34;, &#34;Mi primer PR&#34;, 105) // Instanciamos la clase
+console.log(myFirstPR.getInfo()) // Una vez instanciado, se llama la función
 </code></pre></div><h3 id="getters-y-setters">Getters y Setters</h3>
 <p>Los getters y setters son utilizados en cualquier lenguaje de programación que utiliza POO, como lo sugiere su nombre, se encargan de obtener (get) y establecer (set) datos.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">class MissionCommander {
@@ -167,7 +167,7 @@ console.log(Toolbox.getUsefulTools)
 
 class Viajero extends Explorer {
     constructor(name, user, mission, cycle) {
-        super(name, user, mission) // &lt;--- SUPER ayudará a llamar el constructor padre (herencia)
+        super(name, user, mission) // SUPER ayudará a llamar el constructor padre (herencia)
         this.cycle = cycle
     }
 
@@ -187,7 +187,7 @@ console.log(viajero.getGeneralInfo()) // Llamada al método de Overriding
 Para realizar pruebas, necesitamos exportar los módulos que queremos probar.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback">// Class - pokemon.js
 
-// Creamos nuestra clase como siempre
+// Creamos nuestra clase como siempre y la exportamos
 export default class Pokemon{
     constructor(name, type, age) {
         this.name = name
