@@ -8,6 +8,17 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://dev-luissm.github.io/my_launchx_blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Backend: Semana 2 🚀</title>
+      <link>https://dev-luissm.github.io/my_launchx_blog/posts/post_3/</link>
+      <pubDate>Tue, 26 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://dev-luissm.github.io/my_launchx_blog/posts/post_3/</guid>
+      <description>Hola de nuevo, hace unos días terminé la segunda semana de backend, la razón por la que escribo apenas son dos: Aún no me acostumbro a escribir semanalmente y puse en práctica estos temas en el trabajo.
+Aún más objetos y clases En el post anterior, hablé sobre como crear una clase y objeto, que tienen ciertas similitudes pero hay más de ello.
+Métodos en objetos Los métodos en los objetos son bastante útiles para tratar y retornar dartos previamente tratados o que simplemente se necesitan a la hora de utilizar esta información, la sintaxis es básica, agregando una llave y la función tomará el rol del valor devuelto:</description>
+    </item>
+    
+    <item>
       <title>Backend: Semana 1 🚀</title>
       <link>https://dev-luissm.github.io/my_launchx_blog/posts/post_2/</link>
       <pubDate>Tue, 19 Apr 2022 00:00:00 +0000</pubDate>
